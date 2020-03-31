@@ -3,23 +3,57 @@
 	--gap-small: 5px;
 	--gap: 10px;
 	--gap-large: 20px;
+
+	--theme: #17aff6;
+	--border: rgba(0, 0, 0, 0.1);
+
 }
 
 body {
 	margin: 0;
 	font-family: Arial;
 }
+header {
+	width: 100%;
+	height: 5px;
+	background: var(--theme);
+}
 .bodyWrapper {
 	width: 100%;
-	margin-top: var(--gap);
+	margin-top: var(--gap-large);
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 }
 .body {
 	width: 95%;
-	max-width: 800px;
+	max-width: 1200px;
 }
+
+
+.newThought {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-gap: var(--gap);
+	margin-bottom: var(--gap-large);
+}
+.newThoughtInput, .submitThoughtButton {
+	font-size: 1rem;
+	border-radius: 4px;
+	
+}
+.newThoughtInput {
+	padding: 10px;
+	border: 1px solid var(--border);
+	background: transparent;
+}
+.submitThoughtButton {
+	background: var(--theme);
+	color: white;
+	border: 0;
+	padding: 8px 16px;
+}
+
 
 .thoughts {
 	display: grid;
@@ -28,7 +62,7 @@ body {
 }
 .thought {
 	padding: 10px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid var(--border);
 	border-radius: 4px;
 }
 .thought .thoughtTitle {
