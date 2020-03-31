@@ -1,8 +1,9 @@
 {
 	"compilerOptions": {
+		"module": "ES6",
 		"lib": ["DOM", "es5"],
 		"outDir": "dist",
-		"sourceMap": true,
+		"sourceMap": true
 	},
 	"files": [
 		"src/main.ts"

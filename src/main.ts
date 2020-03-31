@@ -1,5 +1,5 @@
 
-import { Thought } from "./classes"
+import { Thought } from "./classes.js";
 let thoughts: Thought[] = [];
 
 function getNewId(): number {
@@ -18,7 +18,7 @@ function parseThoughts(): void {
 	for(let thought of tmp) {
 		thoughts.push(new Thought(
 			thought.text, 
-			(thought.id || getNewId()), 
+			thought.id || getNewId(), 
 			thought.made
 		));
 	}
