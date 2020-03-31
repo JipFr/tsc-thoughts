@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"lib": ["DOM", "es5"],
+		"outDir": "dist",
+		"sourceMap": true,
+	},
+	"files": [
+		"src/main.ts"
+	]
+}
