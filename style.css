@@ -1,0 +1,45 @@
+
+:root {
+	--gap-small: 5px;
+	--gap: 10px;
+	--gap-large: 20px;
+}
+
+body {
+	margin: 0;
+	font-family: Arial;
+}
+.bodyWrapper {
+	width: 100%;
+	margin-top: var(--gap);
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.body {
+	width: 95%;
+	max-width: 800px;
+}
+
+.thoughts {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-gap: var(--gap);
+}
+.thought {
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+}
+.thought .thoughtTitle {
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+}
+.thought .delete {
+	text-decoration: none;;
+}
+.thought .content {
+	margin: 0;
+	margin-top: var(--gap-small);
+}

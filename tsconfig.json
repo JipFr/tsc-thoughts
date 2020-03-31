@@ -1,9 +1,8 @@
 {
 	"compilerOptions": {
-		"module": "ES2020",
-		"lib": ["DOM", "es5"],
+		"lib": ["DOM", "es5", "es2017"],
 		"outDir": "dist",
-		"sourceMap": true
+		"sourceMap": false
 	},
 	"files": [
 		"src/main.ts"
